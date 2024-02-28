@@ -1,0 +1,17 @@
+{
+  "name": "drupal/ckeditor",
+  "description": "Drupal Ckeditor fork",
+  "keywords": ["ckeditor"],
+  "type": "package",
+  "license": "GPL-3.0",
+  "minimum-stability": "dev",
+  "authors":[
+    {
+      "name":"Wiktor Walc",
+      "email":"ww@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  }
+}

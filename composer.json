@@ -1,8 +1,8 @@
 {
   "name": "drupal/ckeditor",
   "description": "Drupal Ckeditor fork",
+  "type": "drupal-module",
   "keywords": ["ckeditor"],
-  "type": "package",
   "license": "GPL-3.0",
   "minimum-stability": "dev",
   "authors":[

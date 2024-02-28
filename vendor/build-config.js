@@ -1,109 +1,170 @@
+﻿/**
+ * @license Copyright (c) 2003-2023, CKSource Holding sp. z o.o. All rights reserved.
+ * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license/
+ */
+
 /**
- * This is a Drupal-optimized build of CKEditor.
+ * This file was added automatically by CKEditor builder.
+ * You may re-use it at any time to build CKEditor again.
  *
- * To re-create this build:
- * 1. Clone the development repo of CKEditor to your machine
- * 2. Check out the version you'd like to build
- * 3. Copy PATH/TO/DRUPAL/core/assets/vendor/ckeditor/build-config.js ./dev/builder/
- * 4. Run ./dev/builder/build.sh -s
+ * If you would like to build CKEditor online again
+ * (for example to upgrade), visit one the following links:
  *
- * Then, replace this directory (core/assets/vendor/ckeditor) with your build.
+ * (1) https://ckeditor.com/cke4/builder
+ *     Visit online builder to build CKEditor from scratch.
  *
- * Also: Remember to update core/core.libraries.yml if you are doing an update of the version of CKEditor for Drupal
- * Core.
+ * (2) https://ckeditor.com/cke4/builder/0c876c976a43e3210d6aa51c46cdc17e
+ *     Visit online builder to build CKEditor, starting with the same setup as before.
  *
- * If you are developing or debugging CKEditor plugins, you may want to work
- * against an unoptimized (unminified) CKEditor build. To do so,
- * run the build command with the --leave-js-unminified flag.
+ * (3) https://ckeditor.com/cke4/builder/download/0c876c976a43e3210d6aa51c46cdc17e
+ *     Straight download link to the latest version of CKEditor (Optimized) with the same setup as before.
  *
  * NOTE:
  *    This file is not used by CKEditor, you may remove it.
  *    Changing this file will not change your CKEditor configuration.
  */
 
-/* exported CKBUILDER_CONFIG */
-
 var CKBUILDER_CONFIG = {
 	skin: 'moono-lisa',
+	preset: 'standard',
 	ignore: [
-		// CKEditor repository structure: unrelated to the usage of CKEditor itself.
-		'bender.js',
-		'bender.ci.js',
-		'.bender',
-		'bender-err.log',
-		'bender-out.log',
-		'bender-runner.config.json',
-		'.travis.yml',
-		'dev',
-		'docs',
 		'.DS_Store',
+		'.bender',
 		'.editorconfig',
-		'.gitignore',
 		'.gitattributes',
-		'.github',
-		'gruntfile.js',
+		'.gitignore',
 		'.idea',
 		'.jscsrc',
 		'.jshintignore',
 		'.jshintrc',
-		'less',
 		'.mailmap',
-		'node_modules',
+		'.npm',
 		'.nvmrc',
+		'.travis.yml',
+		'bender-err.log',
+		'bender-out.log',
+		'bender-runner.config.json',
+		'bender.ci.js',
+		'bender.js',
+		'dev',
+		'gruntfile.js',
+		'less',
+		'node_modules',
+		'package-lock.json',
 		'package.json',
-		'README.md',
-		'tests',
-		// Parts of CKEditor that we consciously don't ship with Drupal.
-		'adapters',
-		'config.js',
-		'contents.css',
-		'styles.js',
-		'samples',
-		'skins/moono-lisa/readme.md'
+		'tests'
 	],
-	plugins: {
-		a11yhelp: 1,
-		about: 1,
-		autogrow: 1,
-		basicstyles: 1,
-		blockquote: 1,
-		clipboard: 1,
-		contextmenu: 1,
-		elementspath: 1,
-		enterkey: 1,
-		entities: 1,
-		filebrowser: 1,
-		floatingspace: 1,
-		format: 1,
-		horizontalrule: 1,
-		htmlwriter: 1,
-		image2: 1,
-		indent: 1,
-		indentlist: 1,
-		justify: 1,
-		language: 1,
-		list: 1,
-		magicline: 1,
-		maximize: 1,
-    pastefromgdocs: 1,
-    pastefromlibreoffice: 1,
-		pastefromword: 1,
-		pastetext: 1,
-		removeformat: 1,
-		sharedspace: 1,
-		showblocks: 1,
-		showborders: 1,
-		sourcearea: 1,
-		sourcedialog: 1,
-		specialchar: 1,
-		stylescombo: 1,
-		tab: 1,
-		table: 1,
-		tableresize: 1,
-		tabletools: 1,
-		toolbar: 1,
-		undo: 1,
-		widget: 1,
-		wysiwygarea: 1
+	plugins : {
+		'a11yhelp' : 1,
+		'about' : 1,
+		'basicstyles' : 1,
+		'blockquote' : 1,
+		'clipboard' : 1,
+		'contextmenu' : 1,
+		'elementspath' : 1,
+		'enterkey' : 1,
+		'entities' : 1,
+		'filebrowser' : 1,
+		'floatingspace' : 1,
+		'format' : 1,
+		'horizontalrule' : 1,
+		'htmlwriter' : 1,
+		'image' : 1,
+		'indentlist' : 1,
+		'link' : 1,
+		'list' : 1,
+		'magicline' : 1,
+		'maximize' : 1,
+		'pastefromgdocs' : 1,
+		'pastefromlibreoffice' : 1,
+		'pastefromword' : 1,
+		'pastetext' : 1,
+		'removeformat' : 1,
+		'resize' : 1,
+		'scayt' : 1,
+		'showborders' : 1,
+		'sourcearea' : 1,
+		'specialchar' : 1,
+		'stylescombo' : 1,
+		'tab' : 1,
+		'table' : 1,
+		'tableselection' : 1,
+		'tabletools' : 1,
+		'toolbar' : 1,
+		'undo' : 1,
+		'uploadimage' : 1,
+		'wysiwygarea' : 1
+	},
+	languages : {
+		'af' : 1,
+		'ar' : 1,
+		'az' : 1,
+		'bg' : 1,
+		'bn' : 1,
+		'bs' : 1,
+		'ca' : 1,
+		'cs' : 1,
+		'cy' : 1,
+		'da' : 1,
+		'de' : 1,
+		'de-ch' : 1,
+		'el' : 1,
+		'en' : 1,
+		'en-au' : 1,
+		'en-ca' : 1,
+		'en-gb' : 1,
+		'eo' : 1,
+		'es' : 1,
+		'es-mx' : 1,
+		'et' : 1,
+		'eu' : 1,
+		'fa' : 1,
+		'fi' : 1,
+		'fo' : 1,
+		'fr' : 1,
+		'fr-ca' : 1,
+		'gl' : 1,
+		'gu' : 1,
+		'he' : 1,
+		'hi' : 1,
+		'hr' : 1,
+		'hu' : 1,
+		'id' : 1,
+		'is' : 1,
+		'it' : 1,
+		'ja' : 1,
+		'ka' : 1,
+		'km' : 1,
+		'ko' : 1,
+		'ku' : 1,
+		'lt' : 1,
+		'lv' : 1,
+		'mk' : 1,
+		'mn' : 1,
+		'ms' : 1,
+		'nb' : 1,
+		'nl' : 1,
+		'no' : 1,
+		'oc' : 1,
+		'pl' : 1,
+		'pt' : 1,
+		'pt-br' : 1,
+		'ro' : 1,
+		'ru' : 1,
+		'si' : 1,
+		'sk' : 1,
+		'sl' : 1,
+		'sq' : 1,
+		'sr' : 1,
+		'sr-latn' : 1,
+		'sv' : 1,
+		'th' : 1,
+		'tr' : 1,
+		'tt' : 1,
+		'ug' : 1,
+		'uk' : 1,
+		'vi' : 1,
+		'zh' : 1,
+		'zh-cn' : 1
 	}
 };

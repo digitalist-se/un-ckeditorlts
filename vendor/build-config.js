@@ -70,6 +70,7 @@ var CKBUILDER_CONFIG = {
 		'horizontalrule' : 1,
 		'htmlwriter' : 1,
 		'image' : 1,
+		'image2' : 1,
 		'indentlist' : 1,
 		'link' : 1,
 		'list' : 1,
